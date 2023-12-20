@@ -1,0 +1,184 @@
+\documentclass{report}
+\usepackage{tikz}
+\usepackage{xcolor}
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\title{\Huge{AP Calculus BC}\\}
+\author{\Huge{Xin D.}}
+\date{\huge{12.20.23}}
+
+\begin{document}
+
+\maketitle
+
+\qs{}{
+
+\begin{align*}
+	\int_3^e\left(\frac{x^3 - x}{x^2}\right)dx
+\end{align*}
+
+}
+
+\pf{Proof}{
+	\begin{align*}
+		\int_3^e\left(\frac{x^3}{x^2} - \frac{x}{x^2}\right)dx \\\\ 
+		\text{Cancel the terms out:}
+	\end{align*}
+	\begin{align*} 
+		\int_3^e\left(x - \frac{1}{x}\right) \\\\
+		\text{Integrate:}
+	\end{align*}
+	\begin{align*}
+		= \Bigg[\frac{x^2}{2} - \ln|x|\Bigg]_3^e 
+	\end{align*}
+	\begin{align*}
+		\text{Plug in for the definite integral: F(b) - F(a):}
+	\end{align*}
+	\begin{align*}
+		\left(\frac{e^2}{2} - lne\right) - \left(\frac{9}{2} - ln3\right)
+	\end{align*}
+	\begin{align*}
+		\text{Remember that} \ln \text{e = 1}
+	\end{align*}
+	\begin{align*}
+		&= \left(\frac{e^2}{2} - 1\right) - \frac{9}{2} + \ln3 \\\\
+		&= \frac{e^2}{2} - \frac{2}{2} - \frac{9}{2} + \ln3 \\\\
+		&= \colorbox{yellow}{$\displaystyle \frac{e^2}{2} - \frac{11}{2} + \ln3$} \\\\\\\\\\
+	\end{align*}
+}
+	
+
+\qs{}{
+	\begin{equation}
+		\int \tan^2{2x } dx
+	\end{equation}
+}
+
+\pf{Proof}{
+	\begin{align*}
+		\text{Remember that the } \int \tan^2{2x} = \it{1 - \sec^2{2x}} 
+	\end{align*}
+
+	\begin{align*}
+		\text{Rewrite:}
+	\end{align*}
+
+	\begin{align*}
+		\int \left(1-\sec^2{2x}\right) dx 
+	\end{align*}
+
+	\begin{align*}
+		\text{Let u = 2x} \\\\
+		\text{du = 2dx} \\\\
+		\frac{du}{2} = dx
+	\end{align*}
+
+	\begin{align*}
+		\int\left(1 - \sec^2(2x)\right) \frac{du}{2}
+	\end{align*}
+	\begin{align*}
+		\text{Separate into two integrals:}
+	\end{align*}
+	\begin{align}
+		\int \Big[1\Big] - \int \Big[-\sec^2(2x)\Big] \frac{du}{2} \\ 
+	\end{align}
+	\begin{align*}
+		\text{Remember that } \int \sec^2{u}du = \tan u + C 
+	\end{align*}
+	\begin{align}
+		\text{Evaluate:}
+	\end{align}
+	\begin{align}
+		x + \big[- \tan{2x} + C\big] \frac{du}{2} 
+	\end{align}
+	\begin{align}
+		\text{Note that the constant 1/2 is only applied to the tan}
+	\end{align}
+	\begin{align}
+		\colorbox{yellow}{$\displaystyle x - \frac{1}{2} \tan{2x} + C$}
+	\end{align}
+}
+
+
+REVIEW OF BASIC
+INTEGRATION RULES $(a>0)$\\\\
+1. $\int k f(u) d u=k \int f(u) d u$\\\\
+2. $\int[f(u) \pm g(u)] d u= \int f(u) d u \pm \int g(u) d u$ \\\\
+3. $\int d u=u+C$ \\\\
+4. $\int u^n d u=\frac{u^{n+1}}{n+1}+C, n \neq-1$ \\\\
+5. $\int \frac{d u}{u}=\ln |u|+C$ \\\\
+6. $\int e^u d u=e^u+C$ \\\\
+7. $\int a^{\prime \prime} d u=\left(\frac{1}{\ln a}\right) a^u+C$ \\\\
+8. $\int \sin u d u=-\cos u+C$ \\\\
+9. $\int \cos u d u=\sin u+C$ \\ \\
+10. $\int \tan u d u=-\ln |\cos u|+C$ \\\\\\
+PROCEDURES FOR FITTING INTEGRANDS TO BASIC INTEGRATION RULE \\\\
+
+Expand (numerator).
+\begin{align}
+\left(1+e^x\right)^2=1+2 e^x+e^{2 x} \\
+\end{align}
+
+Separate numerator.
+\begin{align}
+	\frac{1+x}{x^2+1}=\frac{1}{x^2+1}+\frac{x}{x^2+1} \\
+\end{align}
+
+Complete the square.
+\begin{align}
+	\frac{1}{\sqrt{2 x-x^2}}=\frac{1}{\sqrt{1-(x-1)^2}} \\
+\end{align}
+
+Divide improper rational function.
+\begin{align}
+	\frac{x^2}{x^2+1}=1-\frac{1}{x^2+1} \\
+\end{align}
+
+Add and subtract terms in numerator.
+\begin{align}
+	\frac{2 x}{x^2+2 x+1}=\frac{2 x+2-2}{x^2+2 x+1}=\frac{2 x+2}{x^2+2 x+1}-\frac{2}{(x+1)^2} \\
+\end{align}
+
+Use trigonometric identities.
+\begin{align}
+	\cot ^2 x=\csc ^2 x-1 \\
+\end{align}
+
+Multiply and divide by Pythagorean conjugate.
+
+
+
+
+
+\begin{align}
+	\frac{1}{1+\sin x}=\left(\frac{1}{1+\sin x}\right)\left(\frac{1-\sin x}{1-\sin x}\right)=\frac{1-\sin x}{1-\sin ^2 x}
+\end{align}
+\begin{align}
+	=\frac{1-\sin x}{\cos ^2 x}=\sec ^2 x-\frac{\sin x}{\cos ^2 x} \\
+\end{align}
+
+\qs{}{
+	\begin{align}
+		\text{Evaluate:}
+	\end{align}
+	\begin{equation}
+		\int_0^1\frac{x+3}{\sqrt[2]{4-x^2}} dx
+	\end{equation}
+}
+\pf{Proof}{
+	\begin{align}
+		\text{Separate into two terms for integration:}
+	\end{align}
+	\begin{align}
+		\int_0^1\left(\frac{x}{\sqrt[]{4-x^2}} + \frac{3}{\sqrt[]{4-x^2}}\right) dx
+	\end{align}
+}
+\qs{}{}
+\qs{}{}
+\qs{}{}
+\qs{}{}
+
+Problem 1. 
+\end{document}
