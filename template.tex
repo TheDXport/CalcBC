@@ -81,24 +81,24 @@
 	\begin{align*}
 		\text{Separate into two integrals:}
 	\end{align*}
-	\begin{align}
+	\begin{align*}
 		\int \Big[1\Big] - \int \Big[-\sec^2(2x)\Big] \frac{du}{2} \\ 
-	\end{align}
+	\end{align*}
 	\begin{align*}
 		\text{Remember that } \int \sec^2{u}du = \tan u + C 
 	\end{align*}
-	\begin{align}
+	\begin{align*}
 		\text{Evaluate:}
-	\end{align}
-	\begin{align}
+	\end{align*}
+	\begin{align*}
 		x + \big[- \tan{2x} + C\big] \frac{du}{2} 
-	\end{align}
-	\begin{align}
+	\end{align*}
+	\begin{align*}
 		\text{Note that the constant 1/2 is only applied to the tan}
-	\end{align}
-	\begin{align}
+	\end{align*}
+	\begin{align*}
 		\colorbox{yellow}{$\displaystyle x - \frac{1}{2} \tan{2x} + C$}
-	\end{align}
+	\end{align*}
 }
 
 
@@ -113,38 +113,41 @@ INTEGRATION RULES $(a>0)$\\\\
 7. $\int a^{\prime \prime} d u=\left(\frac{1}{\ln a}\right) a^u+C$ \\\\
 8. $\int \sin u d u=-\cos u+C$ \\\\
 9. $\int \cos u d u=\sin u+C$ \\ \\
-10. $\int \tan u d u=-\ln |\cos u|+C$ \\\\\\
+10. $\int \tan u d u=-\ln |\cos u|+C$ \\\\
+11. \colorbox{yellow}{$\displaystyle \int e^{ax} \, dx = \frac{1}{a}e^{ax}$} \\\\\\
+
+
 PROCEDURES FOR FITTING INTEGRANDS TO BASIC INTEGRATION RULE \\\\
 
 Expand (numerator).
-\begin{align}
+\begin{align*}
 \left(1+e^x\right)^2=1+2 e^x+e^{2 x} \\
-\end{align}
+\end{align*}
 
 Separate numerator.
-\begin{align}
+\begin{align*}
 	\frac{1+x}{x^2+1}=\frac{1}{x^2+1}+\frac{x}{x^2+1} \\
-\end{align}
+\end{align*}
 
 Complete the square.
-\begin{align}
+\begin{align*}
 	\frac{1}{\sqrt{2 x-x^2}}=\frac{1}{\sqrt{1-(x-1)^2}} \\
-\end{align}
+\end{align*}
 
 Divide improper rational function.
-\begin{align}
+\begin{align*}
 	\frac{x^2}{x^2+1}=1-\frac{1}{x^2+1} \\
-\end{align}
+\end{align*}
 
 Add and subtract terms in numerator.
-\begin{align}
+\begin{align*}
 	\frac{2 x}{x^2+2 x+1}=\frac{2 x+2-2}{x^2+2 x+1}=\frac{2 x+2}{x^2+2 x+1}-\frac{2}{(x+1)^2} \\
-\end{align}
+\end{align*}
 
 Use trigonometric identities.
-\begin{align}
+\begin{align*}
 	\cot ^2 x=\csc ^2 x-1 \\
-\end{align}
+\end{align*}
 
 Multiply and divide by Pythagorean conjugate.
 
@@ -152,33 +155,39 @@ Multiply and divide by Pythagorean conjugate.
 
 
 
-\begin{align}
+\begin{align*}
 	\frac{1}{1+\sin x}=\left(\frac{1}{1+\sin x}\right)\left(\frac{1-\sin x}{1-\sin x}\right)=\frac{1-\sin x}{1-\sin ^2 x}
-\end{align}
-\begin{align}
+\end{align*}
+\begin{align*}
 	=\frac{1-\sin x}{\cos ^2 x}=\sec ^2 x-\frac{\sin x}{\cos ^2 x} \\
-\end{align}
+\end{align*}
 
 \qs{}{
-	\begin{align}
+	\begin{align*}
 		\text{Evaluate:}
-	\end{align}
+	\end{align*}
 	\begin{equation}
 		\int_0^1\frac{x+3}{\sqrt[2]{4-x^2}} dx
 	\end{equation}
 }
 \pf{Proof}{
-	\begin{align}
+	\begin{align*}
 		\text{Separate into two terms for integration:}
-	\end{align}
-	\begin{align}
+	\end{align*}
+	\begin{align*}
 		\int_0^1\left(\frac{x}{\sqrt[]{4-x^2}} + \frac{3}{\sqrt[]{4-x^2}}\right) dx
-	\end{align}
+	\end{align*}
+}
+\qs{}{
+	\text{}
 }
 \qs{}{}
 \qs{}{}
 \qs{}{}
-\qs{}{}
+\begin{align*}
+	\text{NOTES FOR TEST} \\\\
+	\colorbox{yellow}{$\displaystyle \int e^{ax} \, dx = \frac{1}{a}e^{ax}$} \\\\
+	\text{Total distance = } \int_a^b \big| v(t) \big|
+\end{align*}
 
-Problem 1. 
 \end{document}
